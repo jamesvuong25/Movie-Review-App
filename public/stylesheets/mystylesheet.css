@@ -1,0 +1,77 @@
+ 
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: fit-content;
+    font-size: large;
+    text-align: center;
+    background-color: rgb(26, 26, 26);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+.loginAvatar {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 30%;
+}
+
+#bustAMovieLogo {
+    font-size: xx-large;
+    font-family: 'Rubik', serif;
+    color: rgb(109, 96, 201);
+    padding: 15px 15px;
+    margin: 8px 0;
+
+    border-radius: 35%;
+}
+
+input[type=text], input[type=password] {
+    font-size: x-large;
+    text-align: center;
+    align-content: center;
+    width: 90%;     
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 3px solid rgb(255, 211, 100);
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#loginButton  {
+    background-color: rgb(109, 96, 201);
+    color: black;
+    padding: 15px 15px;
+    margin: 8px 0;
+    border: 2px solid rgb(67, 67, 67);
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: 40%;
+    margin-top: 20px;
+    font-size: x-large;
+}
+
+#createAccountButton, #registerButton {
+    background-color: rgb(109, 96, 201);
+    color: black;
+    padding: 10px 10px;
+    border: 2px solid rgb(67, 67, 67);
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: 40%;
+    font-size: large;
+}
+
+#loginButton:hover, #createAccountButton:hover {
+    background-color: rgb(142, 134, 203);
+    color: white;
+    font-weight: bold;
+}

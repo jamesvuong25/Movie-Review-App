@@ -1,0 +1,66 @@
+body {
+    background-color: rgb(26, 26, 26);
+    color: white;
+}
+
+#lalalandPoster {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#bustamovie {
+    position: relative;
+    font-size: xx-large;
+    top: 90px;
+    /*left: 400px; */
+    text-align: center;
+    color: #009c95;
+
+}
+
+#title {
+    position: relative;
+    top: 560px;
+    text-align: center;
+}
+
+#summary {
+    position: relative;
+    top: 560px;
+    left: 10px;
+    text-align: center;
+}
+
+h3 {
+    position: relative;
+    top: 590px;
+    text-align: center;
+}
+
+#personalRating
+{
+    position: relative;
+    top: 600px;
+    text-align: center;
+}
+
+
+.likeButtons{
+    position: relative;
+    /* top: 80%; */
+    top: 615px;
+    text-align: center;
+}
+
+.comments {
+    position: relative;
+    top: 630px;
+    text-align: center;
+}
+
+textarea {
+    width: 40%;
+    /* height: 40%; */
+}

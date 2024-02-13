@@ -1,0 +1,117 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: fit-content;
+    font-size: large;
+    background-color: rgb(26, 26, 26);
+    color: gainsboro;
+}
+
+.dark-mode {
+    background-color: rgb(161, 161, 161);
+    color: black;
+  }
+
+#logo {
+    font-size: xxx-large;
+    font-family: 'Rubik', serif;
+    color: rgb(109, 96, 201);
+    margin: 8px 0;
+    border-radius: 35%;
+}
+
+#logoutButton, #DarkMode {
+    color: white;
+    background-color: rgb(109, 96, 201);
+    font-size: 1rem;
+    outline: none;
+    min-height: 38px;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    padding: .375rem, .75rem;
+    line-height: 1.5;
+    border-radius: .75rem;
+}
+
+#search {
+    color: white;
+    background-color: rgb(109, 96, 201);
+    font-size: 1rem;
+    outline: none;
+    min-height: 38px;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    padding: .375rem, .75rem;
+    line-height: 1.5;
+    border-radius: .75rem;
+}
+
+#inputValue {
+    width: 760px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    outline: none;
+    color: black;
+    background-color: lightgrey(109, 96, 201);
+    border: 1px solid rgb(171, 171, 171);
+    border-radius: .25rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.container {
+    padding: 20px;
+    margin: 0 auto;
+}
+
+#movies-searchable {
+    margin-top: 20px;
+}
+
+
+section {
+    position: relative;
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    transition: 250ms all;
+}
+
+section img {
+    width: 300px;
+    transition: 250ms all;
+}
+
+img:hover {
+    margin-left: 0 40px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.content {
+    border: 8px solid rgb(109, 96, 201);
+    height: 250px;
+    display: none;
+    width: 50%;
+    align-self: center;
+}
+
+.content-display {
+    display: block;
+}
+
+#formContainer {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: fit-content;
+    font-size: large;
+    background-color: rgb(26, 26, 26);
+    color: gainsboro;
+}

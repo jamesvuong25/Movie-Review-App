@@ -1,0 +1,54 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: fit-content;
+    font-size: large;
+    text-align: center;
+    background-color: rgb(26, 26, 26);
+}
+
+
+#bustAMovieLogo {
+    font-size: xx-large;
+    font-family: 'Rubik', serif;
+    color: #009c95;
+    padding: 15px 15px;
+    margin: 8px 0;
+    border: 3px solid rgb(255, 211, 100);
+    border-radius: 35%;
+    align-self: left;
+}
+
+#searchBar {
+    color: black;
+    /* margin-left: 500px; */
+    text-align: right;
+    font-size: x-large;
+    border-radius: 10%;
+    /* align-items: right; */
+
+}
+
+#topContainer {
+    display: flex;    
+    flex-direction: row;
+    position: fixed;
+    align-items: center;
+}
+
+.dark-mode {
+    background-color: white;
+    color: black;
+  }
+
+#moviePoster {
+    height: 30%;
+    width: 15%;
+    padding: 10px;
+    position: relative;
+    top:180px
+}
+
+#darkModeButton {
+    position: relative;
+    top: 300px;
+}

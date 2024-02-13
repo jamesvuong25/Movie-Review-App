@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bust-a-Movie Create Account</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/mystylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <script>
+        // function passwordCheck() {
+        //     var password = document.getElementById("newPassword").value;
+        //     var confPassword = document.getElementById("confirmPassword").value;
+        //     if (password != confPassword) {
+        //         alert("Password and Confirmation password do not match!")
+        //         return false;
+        //     }
+        //     window.alert("TEST");
+        // };
+    </script>
+</head>
+<body>
+    <section class="box">
+        <div class="loginForm">
+  
+            <div class="loginAvatar">
+                <img src="/Images/Avatar-No-Background.png" alt="Avatar" class="avatar">
+                <p id="bustAMovieLogo"> 
+                    <strong>bust-a-movie</strong> <BR>
+                    <strong style="font-size: xx-large;">REGISTRATION</strong>
+                </p>
+            </div>
+
+            <form id="registerAcctForm" action="/register" method="POST" onsubmit="passwordCheck()"> 
+                <input type="text" name="newUsername" class="input-field" placeholder="Username" />
+                <input type="password" name="newPassword" class="input-field" placeholder="Password" />
+                <!-- <input type="password" name="confirmPassword" class="input-field" placeholder="Confirm Password" /> -->
+                <input type="submit" id="registerButton" class="btn" value="REGISTER ACCOUNT" onclick=passwordCheck()> <BR>
+            </form>
+
+
+        </div>
+    </section>
+</body>
+</html>

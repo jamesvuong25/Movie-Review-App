@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bust-a-Movie Homepage</title>
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/welcomepagestylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    
+    <script>
+      function darkMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+    </script>
+    
+</head>
+
+
+<body>
+    
+    <form id="logoutForm" action="index.html" > 
+        <input type="submit" id="logoutButton" class="btn" value="Logout">
+    </form>
+    <button type="button" id="DarkMode"onclick="darkMode()">Toggle Dark Mode</button>
+
+    <div class="container">
+        <h1 id="logo">BUST A MOVIE</h1>
+
+        <form>
+            <div class="form-group">
+                <input type="text" id="inputValue" placeholder="Search...">
+            </div>
+
+            <button type="submit" id="search">Search a movie</button>
+        </form>
+    </div>
+
+    <div id="movies-searchable">
+    </div>
+
+    <script src="./javascript/welcomePage.js"></script>
+
+</body>
+
+</html>

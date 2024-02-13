@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaLa Land</title>
+    <link rel="stylesheet" href="./LaLaLandstylesheet.css">
+    
+    <script>
+        function hideComments() {
+            document.getElementById("commentBox").style.display = 'none';
+            document.getElementById("postedComment").style.display = '';
+            document.getElementById("submitButton").style.display = 'none';
+        }
+
+
+        const dislikeButton = document.getElementById('dislikeButton');
+
+        function likeOnClick() {
+            const likeButton = document.getElementById('likeButton');
+            likeButton.style.backgroundColor = 'green';
+            likeButton.style.color = 'white';
+        };
+        function dislikeOnClick() {
+            const dislikeButton = document.getElementById('dislikeButton');
+            dislikeButton.style.backgroundColor = 'red';
+            dislikeButton.style.color = 'white';
+        };
+
+    </script>
+</head>
+
+<body>
+    <img src="./Images/la-la-land-poster-750x422-1.jpg" id="lalalandPoster">
+    <h1 id="bustamovie">bust-a-movie</h1>
+
+    <h1 id="title"><strong>LA LA LAND</strong></h1>
+
+    <div>
+        <p id="summary">
+            <strong>HERE'S TO THE FOOLS WHO DREAM.</strong> 
+            <br>
+            Mia, an aspiring actress, serves lattes to movie stars in between auditions and Sebastian, a jazz musician, scrapes by playing cocktail party gigs in dingy bars, but as success mounts they are faced with decisions that begin to fray the fragile fabric of their love affair, and the dreams they worked so hard to maintain in each other threaten to rip them apart.
+        </p>
+    </div>
+
+    <div>
+        <h3>Personal Rating:</h3>
+        <form id="personalRating">
+            <input type="radio" name="optradio" checked>1 Star
+            <input type="radio" name="optradio">2 Star
+            <input type="radio" name="optradio">3 Star
+            <input type="radio" name="optradio">4 Star
+            <input type="radio" name="optradio">5 Star
+            <input type="radio" name="optradio" hidden checked>
+        </form>
+    </div>
+
+    <div class="likeButtons">
+        <button type="button" id="likeButton" onclick=likeOnClick()>LIKE</button>
+        <button type="button" id="dislikeButton" onclick=dislikeOnClick()>DISLIKE</button>
+    </div>
+
+    <div class="comments">
+        <form action="./letterboxd.html" method="post">
+            <textarea name="comments" id="commentBox" placeholder="Leave a review!"></textarea>
+            <br>
+            <button type="button" onclick=hideComments() style="display:''" id="submitButton">Submit</button>
+            <textarea id="postedComment" style="display:none;">I love LaLa Land!! It's my fav movie of all time!</textarea>
+        </form>
+    </div>
+
+</body>
+</html>

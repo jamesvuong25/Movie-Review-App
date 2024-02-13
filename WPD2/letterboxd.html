@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./letterboxdstylesheet.css">
+    <title>Document</title>
+    <script>
+        function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        }
+    </script>
+</head>
+
+<body>
+
+    <div id="topContainer">
+        <p id="bustAMovieLogo"><strong>bust-a-movie</strong></p>
+
+        <form id="searchBarForm" action="./LaLaLand.html" method="post"> 
+            <input type="search" id="searchBar" name="search" placeholder="Search...">
+        </form>
+    </div>
+
+    <div>
+        <a href="./LaLaLand.html">
+            <img src="./Images/LaLaLand.jpg" id="moviePoster">
+        </a>
+        <a href="./LaLaLand.html">
+            <img src="./Images/LaLaLand.jpg" id="moviePoster">
+        </a>
+        <a href="./LaLaLand.html">
+            <img src="./Images/LaLaLand.jpg" id="moviePoster">
+        </a>
+        <a href="./LaLaLand.html">
+            <img src="./Images/LaLaLand.jpg" id="moviePoster">
+        </a>
+    </div>
+
+    <button onclick="myFunction()" id="darkModeButton">Toggle dark mode</button>
+</body>
+
+</html>
+
